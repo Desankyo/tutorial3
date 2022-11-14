@@ -134564,6 +134564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
+    - target: {fileID: 8450532310634048832, guid: bf1de6a29c5437e4cb86bc81094ba8a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1de6a29c5437e4cb86bc81094ba8a4, type: 3}
 --- !u!1001 &6723972278982127460
