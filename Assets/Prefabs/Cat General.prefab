@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 4383277967822480082}
   - component: {fileID: 4383277967822480083}
   - component: {fileID: 4383277967822480084}
-  - component: {fileID: 571709874}
+  - component: {fileID: 6050798775456745392}
   m_Layer: 11
   m_Name: Cat General
   m_TagString: Untagged
@@ -447,7 +447,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4727745, y: 0.43864822}
   m_EdgeRadius: 0
---- !u!114 &571709874
+--- !u!114 &6050798775456745392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4383277967822480085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66a2e660a07582488992a67822ee246, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a6fdbca12510f34a8b117c4550a3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   displayTime: 4

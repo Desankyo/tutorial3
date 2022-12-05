@@ -177,7 +177,7 @@ public class RubyController : MonoBehaviour
             boostTimer += Time.deltaTime;
             if (boostTimer >= 4)
             {
-                speed = 3.0f;
+                speed = 3;
                 boosting = false;
             }
         }
