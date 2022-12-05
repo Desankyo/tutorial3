@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RubyController
   - Ammo
+  - SpeedBoost
   layers:
   - Default
   - TransparentFX

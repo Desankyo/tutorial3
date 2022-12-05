@@ -21,6 +21,8 @@ public class RubyController : MonoBehaviour
     public AudioClip bgMuse;
     public AudioClip WinClip;
     public AudioClip LoseClip;
+    public AudioClip ammoSound;
+    public AudioClip boostSound;
     
     // Health
     public int maxHealth = 5;
@@ -36,6 +38,9 @@ public class RubyController : MonoBehaviour
     float horizontal;
     float vertical;
     public float speed = 3.0f;
+    public float boostTimer;
+    private bool boosting;
+
     
     // Animator
     Animator animator;
@@ -54,7 +59,6 @@ public class RubyController : MonoBehaviour
     // Particles
     public ParticleSystem damageEffect;
     public ParticleSystem healthEffect;
-
 
     
     // Start is called before the first frame update
@@ -80,6 +84,10 @@ public class RubyController : MonoBehaviour
         //Music
         audioSource.clip = bgMuse;
         audioSource.Play();
+
+        //Speed Boost
+        boostTimer = 0;
+        boosting = false;
     }
 
     // Sound
@@ -161,6 +169,17 @@ public class RubyController : MonoBehaviour
                 SceneManager.LoadScene("Level1");
             }
 
+        }
+
+        //Speed Boost
+        if (boosting)
+        {
+            boostTimer += Time.deltaTime;
+            if (boostTimer >= 4)
+            {
+                speed = 3.0f;
+                boosting = false;
+            }
         }
     }
     
@@ -279,6 +298,18 @@ public class RubyController : MonoBehaviour
         {
             cogCount += 4;
             SetCogText();
+
+            PlaySound(ammoSound);
+
+            Destroy(other.gameObject);
+        }
+
+        //Speed Boost
+        if(other.tag == "SpeedBoost")
+        {
+            boosting = true;
+            speed = 6;
+            PlaySound(boostSound);
             Destroy(other.gameObject);
         }
      }

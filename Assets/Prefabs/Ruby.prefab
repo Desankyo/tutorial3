@@ -110,6 +110,7 @@ MonoBehaviour:
   bgMuse: {fileID: 8300000, guid: c544753aa0366de4d889a9bc9a4da5f8, type: 3}
   WinClip: {fileID: 8300000, guid: fbdf4d3e437681a479dc1b2c28fd2712, type: 3}
   LoseClip: {fileID: 8300000, guid: 3722fd450da804941ac92b156ceb9450, type: 3}
+  ammoSound: {fileID: 8300000, guid: 2f43e10e63db71144b2448e0aa374977, type: 3}
   maxHealth: 5
   timeInvincible: 2
   speed: 3
@@ -198,7 +199,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c544753aa0366de4d889a9bc9a4da5f8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.125
   m_Pitch: 1
   Loop: 1
   Mute: 0
